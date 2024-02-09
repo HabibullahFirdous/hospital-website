@@ -389,6 +389,24 @@ nav {
   padding: 50px 40px;
   background-color: #fff;
   margin: 110px 0;
+  position: relative;
+}
+.free-card::before {
+  content: "New";
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+  width: 90px;
+  height: 90px;
+  /* padding: 30px 16px; */
+  background-color: #e77c40;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+right: -30px;
 }
 .upper-sec {
   display: flex;
@@ -593,11 +611,21 @@ footer {
 footer {
   max-width: 100%;
 }
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #fafafa;
+}
+.footer-links div {
+  display: flex;
+  gap: 20px;
+}
 .copyright {
   font-size: 14px;
   font-weight: 700;
   color: #737373;
   padding: 25px 0;
   text-align: center;
-  background-color: #fafafa;
 }
